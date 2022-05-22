@@ -7,10 +7,13 @@ from webdriver_manager.chrome import ChromeDriverManager  # chrome browser
 
 import time
 
+# ? move search phrase to parameter.
+# ? move url to variable on test page.
+# ? move ID's to locators page
+
 
 def web_search():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-
     # url
     driver.get('https://www.amazon.com')
     # search bar found by ID
